@@ -143,11 +143,11 @@
 						<div class="col-12">
 							<div class="card">
 								<div class="card-header">
-									<a href="#"><button class="btn btn-outline-primary">Sheet Ｉ -- Deals</button></a>
-									<a href="./tables-bootstrap-tab2.html"><button class="btn btn-outline-secondary">Sheet Ⅱ -- Shops</button></a>
+									<a href="./tables-bootstrap.html"><button class="btn btn-outline-secondary">Sheet Ｉ -- Deals</button></a>
+									<a href="#"><button class="btn btn-outline-primary">Sheet Ⅱ -- Shops</button></a>
 									<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 1), rgba(60, 112, 198, 0.5), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
 								</div>
-								<div class="table-responsive" id="sheet1">
+								<!-- <div class="table-responsive" id="sheet1">
 									<table class="table table-bordered mb-0">
 										<thead>
 											<tr style="text-align: center;">
@@ -160,23 +160,23 @@
 											</tr>
 										</tbody>
 									</table>
-								</div>
-								<!-- <div class="table-responsive" id="sheet2">
+								</div> -->
+								<div class="table-responsive" id="sheet2">
 									<table class="table table-bordered mb-0">
 										<thead>
 											<tr style="text-align: center;">
 												<th>Index</th><th>id</th><th>title</th><th>address</th><th>avgprice</th><th>latitude</th><th>longitude</th>
-												<th>avgscore</th><th>comments</th><th>backCateName</th><th>areaname</th><th>region</th><th>isMain</th><th>city</th>
+												<th>avgscore</th><th>comments</th><th>backCateName</th><th>areaname</th><th>phone</th><th>region</th><th>isMain</th><th>city</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr v-for="r in rows">
 												<td>{{r.index}}</td><td>{{r.id}}</td><td>{{r.title}}</td><td>{{r.address}}</td><td>{{r.avgprice}}</td><td>{{r.latitude}}</td><td>{{r.longitude}}</td>
-												<td>{{r.avgscore}}</td><td>{{r.comments}}</td><td>{{r.backCateName}}</td><td>{{r.areaname}}</td><td>{{r.region}}</td><td>{{r.isMain}}</td><td>{{r.city}}</td>
+												<td>{{r.avgscore}}</td><td>{{r.comments}}</td><td>{{r.backCateName}}</td><td>{{r.areaname}}</td><td>——</td><td>{{r.region}}</td><td>{{r.isMain}}</td><td>{{r.city}}</td>
 											</tr>
 										</tbody>
 									</table>
-								</div> -->
+								</div>
 							</div>
 						</div>
 					</div>
@@ -214,7 +214,7 @@
 	<script src="./js/app.js"></script>		<!-- 相对路径 -->
 	<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-	<script>
+	<!-- <script>
 		$(document).ready(function () {
 			$.getJSON("./data/deals-sample.json", function (result, status) {
 				var v = new Vue({
@@ -225,8 +225,8 @@
 				})
 			});
 		});
-	</script>
-	<!-- <script>
+	</script> -->
+	<script>
 		$(document).ready(function () {
 			$.getJSON("./data/shops-sample.json", function (result, status) {
 				var v = new Vue({
@@ -237,7 +237,7 @@
 				})
 			});
 		});
-	</script> -->
+	</script>
 
 </body>
 
