@@ -138,44 +138,47 @@
 			<main class="content" style="background-color: #1a1c1d;color:#889099;">	<!-- ==================== CHANGE HERE ===================== -->
 				<div class="container-fluid p-0">
 
-					<div class="row">
+					<!-- 不等分行 -->
+					<!-- <div class="row">
 						<div class="col-12 col-lg-8 col-xxl-8 d-flex">
 							<div class="card flex-fill">
 								<p class="h4" style="color:#889099;">
 									&nbsp;城市热度</p>
-									<iframe 
-									marginwidth=0
-									marginheight=0
-									width="100%" 
-									height="360"
-									src="./charts/plotly-test.html" 
-									frameborder="no" 
-									scrolling="no">
-									</iframe>
 							</div>
 						</div>
 						<div class="col-12 col-lg-4 col-xxl-4 d-flex">
 							<div class="card flex-fill w-100">
 								<p class="h4" style="color:#889099;">
 									&nbsp;城市热度</p>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- 等分行 -->
+					<div class="row">
+						<div class="col-xl-6 col-xxl-6">
+							<div class="card flex-fill w-100">
+								<p class="h4" style="color:#889099;">
+									&nbsp;茶饮行业热度指数
+									<font size=2 color='666875'>&nbsp;|&nbsp;图例中的三个自定义指数的加权平均【点击图例可切换指数分布】</font>
+								</p>
 								<iframe 
 								marginwidth=0 
 								marginheight=0
 								width="100%" 
 								height="360"
-								src="./charts/brand-summary.html" 
+								src="./charts/industry-index.html" 
 								frameborder="no" 
 								scrolling="no">
 								</iframe>
 							</div>
 						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-xl-6 col-xxl-6">
+						<div class="col-xl-6 col-xxl-6 d-flex">
 							<div class="card flex-fill w-100">
 								<p class="h4" style="color:#889099;">
-									&nbsp;主要城市店铺数量</p>
+									&nbsp;主要城市店铺数量
+									<font size=2 color='666875'>&nbsp;|&nbsp;主要城市&nbsp;——&nbsp;中国大陆地区的直辖市、省会城市、一线城市</font>
+								</p>
 								<iframe 
 								marginwidth=0 
 								marginheight=0
@@ -187,10 +190,32 @@
 								</iframe>
 							</div>
 						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xl-6 col-xxl-6">
+							<div class="card flex-fill w-100">
+								<p class="h4" style="color:#889099;">
+									&nbsp;主要品牌价格分布
+									<font size=2 color='666875'>&nbsp;|&nbsp;Template</font>
+								</p>
+								<iframe 
+								marginwidth=0 
+								marginheight=0
+								width="100%" 
+								height="360"
+								src="./charts/boxplot-test.html" 
+								frameborder="no" 
+								scrolling="no">
+								</iframe>
+							</div>
+						</div>
 						<div class="col-xl-6 col-xxl-6 d-flex">
 							<div class="card flex-fill w-100">
 								<p class="h4" style="color:#889099;">
-									&nbsp;主要品牌店铺数量</p>
+									&nbsp;主要品牌店铺数量
+									<font size=2 color='666875'>&nbsp;|&nbsp;基数：门店数大于<a href="#">10</a>的品牌的店铺，共<a href="#">12211</a>条观测</font>
+								</p>
 								<iframe 
 								marginwidth=0 
 								marginheight=0
@@ -204,30 +229,63 @@
 						</div>
 					</div>
 
+					<!-- 排序-不等分行 -->
 					<div class="row">
 
 						<div class="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3">
 							<div class="card flex-fill w-100">
 								<p class="h4" style="color:#889088;">
-									&nbsp;城市热度</p>
+									&nbsp;方形元素
+									<font size=2 color='666875'>&nbsp;|&nbsp;Template</font>
+								</p>
+								<iframe 
+								marginwidth=0 
+								marginheight=0
+								width="100%" 
+								height="360"
+								src="./charts/gauge_base.html" 
+								frameborder="no" 
+								scrolling="no">
+								</iframe>
 							</div>
 						</div>
 
 						<div class="col-12 col-md-12 col-xxl-6 d-flex order-1 order-xxl-2">
 							<div class="card flex-fill w-100">
 								<p class="h4" style="color:#889088;">
-									&nbsp;城市热度</p>
+									&nbsp;词云
+									<font size=2 color='666875'>&nbsp;|&nbsp;Template</font>
+								</p>
+								<iframe 
+								marginwidth=0 
+								marginheight=0
+								width="100%" 
+								height="360"
+								src="./charts/wordcloud-diamond-with-bg.html" 
+								frameborder="no" 
+								scrolling="no">
+								</iframe>
 							</div>
 						</div>
 
 						<div class="col-12 col-md-6 col-xxl-3 d-flex order-3 order-xxl-1">
 							<div class="card flex-fill">
 								<p class="h4" style="color:#889088;">
-									&nbsp;城市热度</p>
+									&nbsp;方形元素
+									<font size=2 color='666875'>&nbsp;|&nbsp;Template</font>
+								</p>
+								<iframe 
+								marginwidth=0 
+								marginheight=0
+								width="100%" 
+								height="360"
+								src="./charts/liquid_data_precision.html" 
+								frameborder="no" 
+								scrolling="no">
+								</iframe>
 							</div>
 						</div>
 					</div>
-
 
 				</div>
 			</main>
