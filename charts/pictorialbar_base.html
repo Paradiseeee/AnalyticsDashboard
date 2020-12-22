@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="a141800b628a41c189770d6aff8a9927" class="chart-container" style="width:100%; height:360px;"></div>
+    <script>
+        var chart_a141800b628a41c189770d6aff8a9927 = echarts.init(
+            document.getElementById('a141800b628a41c189770d6aff8a9927'), 'dark', {renderer: 'canvas'}
+        );
+        var pathSymbols = {                         // 定义symbol矢量图标
+            cup: 'path://M1007.575017 641.991196c0-82.700286-54.014833-152.209672-183.213905-173.34234 0.52729-29.582278 0.544578-58.179129 0.544579-84.949914H16.427144c0 245.924705 0 640.301058 404.247917 640.301058 188.711554 0 289.296487-85.967756 342.941785-202.641524 173.34234-7.289139 243.958171-84.720845 243.958171-179.36728zM215.643443 869.173326c-76.202082-112.580786-105.079866-245.503305-104.798933-380.076847 0.123178-56.633996 87.953739-56.651284 87.83056 0-0.246357 120.291325 24.698361 235.121738 92.818208 335.739087 31.847033 47.060653-44.283735 90.940276-75.849835 44.33776z m576.71072-127.863558c17.126127-62.131645 25.242939-128.654494 29.072277-193.262674 67.540692 16.776041 82.963931 51.345966 82.155707 95.822033-0.911953 50.628506-19.619951 85.075253-111.227984 97.440641zM326.661807 298.768478c14.053149-40.506262 10.258388-79.819639-5.093537-119.308058-17.074263-43.862335-39.522996-73.338723-8.114651-116.12919 33.569371-45.742427-42.704025-89.481584-75.832547-44.337761-28.352655 38.628331-36.151796 80.452819-24.030604 126.703088 11.943988 45.567384 45.355604 80.802905 28.387232 129.706913-18.621557 53.666908 66.239754 76.519753 84.684107 23.365008zM484.755951 298.768478c14.053149-40.506262 10.258388-79.819639-5.093537-119.308058-17.074263-43.862335-39.522996-73.338723-8.114651-116.12919 33.569371-45.742427-42.704025-89.481584-75.832546-44.337761-28.352655 38.628331-36.151796 80.452819-24.030604 126.703088 11.943988 45.567384 45.355604 80.802905 28.387231 129.706913-18.621557 53.666908 66.239754 76.519753 84.684107 23.365008zM642.850096 298.768478c14.053149-40.506262 10.258388-79.819639-5.093538-119.308058-17.074263-43.862335-39.522996-73.338723-8.11465-116.12919 33.569371-45.742427-42.704025-89.481584-75.832547-44.337761-28.350494 38.628331-36.151796 80.452819-24.030604 126.703088 11.943988 45.567384 45.355604 80.802905 28.387231 129.706913-18.621557 53.666908 66.239754 76.519753 84.684108 23.365008z'
+        };
+        var option_a141800b628a41c189770d6aff8a9927 = {
+            "backgroundColor": "#1a1c1d",
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "elasticOut",
+            "animationDelay": 1000,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "elasticOut",
+            "animationDelayUpdate": 1000,
+            "color": [
+                "#c23531",
+                "#2f4554",
+                "#61a0a8",
+                "#d48265",
+                "#749f83",
+                "#ca8622",
+                "#bda29a",
+                "#6e7074",
+                "#546570",
+                "#c4ccd3",
+                "#f05b72",
+                "#ef5b9c",
+                "#f47920",
+                "#905a3d",
+                "#fab27b",
+                "#2a5caa",
+                "#444693",
+                "#726930",
+                "#b2d235",
+                "#6d8346",
+                "#ac6767",
+                "#1d953f",
+                "#6950a1",
+                "#918597"
+            ],
+            "series": [
+                {
+                    "type": "pictorialBar",
+                    "symbol": pathSymbols.cup,      // 在这里更改图标
+                    "symbolSize": 18,
+                    "symbolOffset": [
+                        0,
+                        0
+                    ],
+                    "symbolRepeat": "fixed",
+                    "symbolClip": true,
+                    "data": [
+                        13,
+                        42,
+                        67,
+                        81,
+                        86,
+                        94,
+                        166,
+                        220,
+                        249,
+                        262
+                    ],
+                    "barCategoryGap": "20%",
+                    "label": {
+                        "show": false,
+                        "position": "top",
+                        "margin": 8
+                    }
+                }
+            ],
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": true,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0
+            },
+            "xAxis": [
+                {
+                    "show": false,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "inverse": false,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    }
+                }
+            ],
+            "yAxis": [
+                {
+                    "show": true,
+                    "scale": false,
+                    "nameLocation": "end",
+                    "nameGap": 15,
+                    "gridIndex": 0,
+                    "axisLine": {
+                        "show": true,
+                        "onZero": true,
+                        "onZeroAxisIndex": 0,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 0,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "axisTick": {
+                        "show": false,
+                        "alignWithLabel": false,
+                        "inside": false
+                    },
+                    "inverse": true,
+                    "offset": 0,
+                    "splitNumber": 5,
+                    "minInterval": 0,
+                    "splitLine": {
+                        "show": false,
+                        "lineStyle": {
+                            "show": true,
+                            "width": 1,
+                            "opacity": 1,
+                            "curveness": 0,
+                            "type": "solid"
+                        }
+                    },
+                    "data": [
+                        "\u5c71\u897f",
+                        "\u56db\u5ddd",
+                        "\u897f\u85cf",
+                        "\u5317\u4eac",
+                        "\u4e0a\u6d77",
+                        "\u5185\u8499\u53e4",
+                        "\u4e91\u5357",
+                        "\u9ed1\u9f99\u6c5f",
+                        "\u5e7f\u4e1c",
+                        "\u798f\u5efa"
+                    ]
+                }
+            ]
+        };
+        chart_a141800b628a41c189770d6aff8a9927.setOption(option_a141800b628a41c189770d6aff8a9927);
+    </script>
+</body>
+</html>
