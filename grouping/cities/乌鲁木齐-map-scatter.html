@@ -8,11 +8,11 @@
 
 </head>
 <body>
-    <div id="03d08fb5406e4621bc8e5fb45de88d5e" class="chart-container" style="width:100%; height:720px;"></div>
+    <div id="32766666d2d8437a94e0f1a6b8950dc8" class="chart-container" style="width:100%; height:720px;"></div>
     <script>
-        var chart_03d08fb5406e4621bc8e5fb45de88d5e = echarts.init(
-            document.getElementById('03d08fb5406e4621bc8e5fb45de88d5e'), 'dark', {renderer: 'canvas'});
-        var option_03d08fb5406e4621bc8e5fb45de88d5e = {
+        var chart_32766666d2d8437a94e0f1a6b8950dc8 = echarts.init(
+            document.getElementById('32766666d2d8437a94e0f1a6b8950dc8'), 'dark', {renderer: 'canvas'});
+        var option_32766666d2d8437a94e0f1a6b8950dc8 = {
     "backgroundColor": "#1a1c1d",
     "animation": true,
     "animationThreshold": 2000,
@@ -24,17 +24,78 @@
     "animationDelayUpdate": 0,
     "series": [
         {
-            "type": "effectScatter",
-            "name": "\u5e97\u94fa\u53ca\u5176\u533a\u57df\u4e0e\u4ef7\u683c",
+            "type": "heatmap",
+            "name": "\u533a\u57df\u6570\u91cf\u5206\u5e03\u70ed\u529b",
             "coordinateSystem": "geo",
-            "showEffectOn": "render",
+            "data": [
+                {
+                    "name": "\u65b0\u5e02\u533a",
+                    "value": [
+                        87.6,
+                        43.85,
+                        130
+                    ]
+                },
+                {
+                    "name": "\u6c99\u4f9d\u5df4\u514b\u533a",
+                    "value": [
+                        87.6,
+                        43.78,
+                        100
+                    ]
+                },
+                {
+                    "name": "\u5929\u5c71\u533a",
+                    "value": [
+                        87.65,
+                        43.78,
+                        70
+                    ]
+                },
+                {
+                    "name": "\u7c73\u4e1c\u533a",
+                    "value": [
+                        101.7,
+                        26.55,
+                        31
+                    ]
+                },
+                {
+                    "name": "\u6c34\u78e8\u6c9f\u533a",
+                    "value": [
+                        87.63,
+                        43.83,
+                        27
+                    ]
+                },
+                {
+                    "name": "\u5934\u5c6f\u6cb3\u533a",
+                    "value": [
+                        87.42,
+                        43.87,
+                        8
+                    ]
+                }
+            ],
+            "pointSize": 30,
+            "blurSize": 50,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
             "rippleEffect": {
                 "show": true,
                 "brushType": "stroke",
-                "scale": 3,
+                "scale": 2.5,
                 "period": 4
-            },
-            "symbolSize": 10,
+            }
+        },
+        {
+            "type": "scatter",
+            "name": "\u5e97\u94fa\u53ca\u5176\u533a\u57df\u4e0e\u4ef7\u683c",
+            "coordinateSystem": "geo",
+            "symbolSize": 12,
             "data": [
                 {
                     "name": "\u871c\u96ea\u51b0\u57ce",
@@ -4070,15 +4131,23 @@
             },
             "itemStyle": {
                 "color": "#CF333E"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
             }
         }
     ],
     "legend": [
         {
             "data": [
+                "\u533a\u57df\u6570\u91cf\u5206\u5e03\u70ed\u529b",
                 "\u5e97\u94fa\u53ca\u5176\u533a\u57df\u4e0e\u4ef7\u683c"
             ],
             "selected": {
+                "\u533a\u57df\u6570\u91cf\u5206\u5e03\u70ed\u529b": true,
                 "\u5e97\u94fa\u53ca\u5176\u533a\u57df\u4e0e\u4ef7\u683c": true
             },
             "show": false,
@@ -4108,25 +4177,62 @@
     },
     "title": [
         {
+            "text": "\u4e4c\u9c81\u6728\u9f50",
+            "subtext": "\u5e97\u94fa\u603b\u6570\uff1a366",
+            "left": "2%",
+            "top": "1%",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#889099",
+                "fontFamily": "KaiTi",
+                "fontSize": 30
+            }
         }
     ],
+    "visualMap": {
+        "show": false,
+        "type": "continuous",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
     "geo": {
         "map": "\u4e4c\u9c81\u6728\u9f50",
         "zoom": 1.3,
         "roam": true,
+        "label": {
+            "show": true,
+            "position": "top",
+            "color": "#AAABBB",
+            "margin": 8,
+            "fontSize": 14
+        },
         "itemStyle": {
-            "color": "#24244C",
+            "color": "#24364C",
             "borderColor": "#1a1c1d",
             "borderWidth": 1
         },
-        "emphasis": {"itemStyle": {"areaColor": "#4992FF"}}
+        "emphasis": {"itemStyle": {"areaColor": "#405666"}}
     }
 };
-        chart_03d08fb5406e4621bc8e5fb45de88d5e.setOption(option_03d08fb5406e4621bc8e5fb45de88d5e);
+        chart_32766666d2d8437a94e0f1a6b8950dc8.setOption(option_32766666d2d8437a94e0f1a6b8950dc8);
             window.addEventListener('resize', function(){
-                chart_03d08fb5406e4621bc8e5fb45de88d5e.resize();
+                chart_32766666d2d8437a94e0f1a6b8950dc8.resize();
             })
     </script>
 </body>

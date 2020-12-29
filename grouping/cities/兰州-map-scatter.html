@@ -8,11 +8,11 @@
 
 </head>
 <body>
-    <div id="6d0a8b4e751145e090dbb303c6d57793" class="chart-container" style="width:100%; height:720px;"></div>
+    <div id="861033d4e8ad4df1bc15dbfcfb37088f" class="chart-container" style="width:100%; height:720px;"></div>
     <script>
-        var chart_6d0a8b4e751145e090dbb303c6d57793 = echarts.init(
-            document.getElementById('6d0a8b4e751145e090dbb303c6d57793'), 'dark', {renderer: 'canvas'});
-        var option_6d0a8b4e751145e090dbb303c6d57793 = {
+        var chart_861033d4e8ad4df1bc15dbfcfb37088f = echarts.init(
+            document.getElementById('861033d4e8ad4df1bc15dbfcfb37088f'), 'dark', {renderer: 'canvas'});
+        var option_861033d4e8ad4df1bc15dbfcfb37088f = {
     "backgroundColor": "#1a1c1d",
     "animation": true,
     "animationThreshold": 2000,
@@ -24,17 +24,70 @@
     "animationDelayUpdate": 0,
     "series": [
         {
-            "type": "effectScatter",
-            "name": "\u5e97\u94fa\u53ca\u5176\u533a\u57df\u4e0e\u4ef7\u683c",
+            "type": "heatmap",
+            "name": "\u533a\u57df\u6570\u91cf\u5206\u5e03\u70ed\u529b",
             "coordinateSystem": "geo",
-            "showEffectOn": "render",
+            "data": [
+                {
+                    "name": "\u57ce\u5173\u533a",
+                    "value": [
+                        103.83,
+                        36.05,
+                        281
+                    ]
+                },
+                {
+                    "name": "\u5b89\u5b81\u533a",
+                    "value": [
+                        116.68,
+                        39.52,
+                        91
+                    ]
+                },
+                {
+                    "name": "\u897f\u56fa\u533a",
+                    "value": [
+                        103.62,
+                        36.1,
+                        45
+                    ]
+                },
+                {
+                    "name": "\u7ea2\u53e4\u533a",
+                    "value": [
+                        102.87,
+                        36.33,
+                        5
+                    ]
+                },
+                {
+                    "name": "\u768b\u5170\u53bf\u65b0\u533a",
+                    "value": [
+                        103.95,
+                        36.33,
+                        2
+                    ]
+                }
+            ],
+            "pointSize": 30,
+            "blurSize": 50,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
             "rippleEffect": {
                 "show": true,
                 "brushType": "stroke",
-                "scale": 3,
+                "scale": 2.5,
                 "period": 4
-            },
-            "symbolSize": 10,
+            }
+        },
+        {
+            "type": "scatter",
+            "name": "\u5e97\u94fa\u53ca\u5176\u533a\u57df\u4e0e\u4ef7\u683c",
+            "coordinateSystem": "geo",
+            "symbolSize": 12,
             "data": [
                 {
                     "name": "\u871c\u96ea\u51b0\u57ce",
@@ -6567,15 +6620,23 @@
             },
             "itemStyle": {
                 "color": "#CF333E"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
             }
         }
     ],
     "legend": [
         {
             "data": [
+                "\u533a\u57df\u6570\u91cf\u5206\u5e03\u70ed\u529b",
                 "\u5e97\u94fa\u53ca\u5176\u533a\u57df\u4e0e\u4ef7\u683c"
             ],
             "selected": {
+                "\u533a\u57df\u6570\u91cf\u5206\u5e03\u70ed\u529b": true,
                 "\u5e97\u94fa\u53ca\u5176\u533a\u57df\u4e0e\u4ef7\u683c": true
             },
             "show": false,
@@ -6605,25 +6666,62 @@
     },
     "title": [
         {
+            "text": "\u5170\u5dde",
+            "subtext": "\u5e97\u94fa\u603b\u6570\uff1a593",
+            "left": "2%",
+            "top": "1%",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#889099",
+                "fontFamily": "KaiTi",
+                "fontSize": 30
+            }
         }
     ],
+    "visualMap": {
+        "show": false,
+        "type": "continuous",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
     "geo": {
         "map": "\u5170\u5dde",
         "zoom": 1.3,
         "roam": true,
+        "label": {
+            "show": true,
+            "position": "top",
+            "color": "#AAABBB",
+            "margin": 8,
+            "fontSize": 14
+        },
         "itemStyle": {
-            "color": "#24244C",
+            "color": "#24364C",
             "borderColor": "#1a1c1d",
             "borderWidth": 1
         },
-        "emphasis": {"itemStyle": {"areaColor": "#4992FF"}}
+        "emphasis": {"itemStyle": {"areaColor": "#405666"}}
     }
 };
-        chart_6d0a8b4e751145e090dbb303c6d57793.setOption(option_6d0a8b4e751145e090dbb303c6d57793);
+        chart_861033d4e8ad4df1bc15dbfcfb37088f.setOption(option_861033d4e8ad4df1bc15dbfcfb37088f);
             window.addEventListener('resize', function(){
-                chart_6d0a8b4e751145e090dbb303c6d57793.resize();
+                chart_861033d4e8ad4df1bc15dbfcfb37088f.resize();
             })
     </script>
 </body>
