@@ -152,19 +152,35 @@
 								<div class="card flex-fill w-100">
 									<div class="btn-group" id="buttons">
 										<div class="btn btn-primary"><span>选择城市&nbsp;&nbsp;➤</span></div>
-										<select name="selector" id="selector" class='btn btn-github' style="border-width: 2px; border-color: #3B7DDD; border-style: groove;">
-											<option v-for="r in rows">{{r.city}}</option>
+										<select name="selector" id="selector" class='btn btn-github' style="border-width: 2px; border-color: #3B7DDD;">
+											<option v-for="r in rows" v-bind:next="[r.next]">{{r.city}}</option>
 										</select>
 										<input 
 											type="button" class="btn btn-info"
+											style="background-color: rgba(59, 125, 221, 0.6); border-color: #3B7DDD; border-width: 3px; border-left-style: hidden;"
 											value="刷新 ↺ "
 											onclick="
-												var city=getSelectText('selector');
-												getElementById('fig1').getAttributeNode('src').value = './grouping/cities/' + city + '-map-scatter.html';
-												getElementById('fig2').getAttributeNode('src').value = './grouping/cities/' + city + '-bar-line.html';
-												getElementById('fig3').getAttributeNode('src').value = './grouping/cities/' + city + '-bar-pie.html';
-											"
-										>
+													var city=getSelectText('selector');
+													getElementById('fig1').getAttributeNode('src').value = './grouping/cities/' + city + '-map-scatter.html';
+													getElementById('fig2').getAttributeNode('src').value = './grouping/cities/' + city + '-bar-line.html';
+													getElementById('fig3').getAttributeNode('src').value = './grouping/cities/' + city + '-bar-pie.html';
+												"
+											>
+										<input 
+											type="button" class="btn btn-info" 
+											style="background-color: rgba(23, 162, 184, 0.6); border-color: #3B7DDD; border-width: 3px; border-left-style: hidden;"
+											value="下一个 ▼ "
+											onclick="
+													var next = getNext('selector')
+													if (!next) {
+														alert('已经是最后一个啦！')
+													}else{
+														getElementById('fig1').getAttributeNode('src').value = './grouping/cities/' + next + '-map-scatter.html';
+														getElementById('fig2').getAttributeNode('src').value = './grouping/cities/' + next + '-bar-line.html';
+														getElementById('fig3').getAttributeNode('src').value = './grouping/cities/' + next + '-bar-pie.html';
+													}
+												"
+											>
 									</div>
 								</div>
 							</div>
@@ -276,23 +292,38 @@
 	<script language="JavaScript" type="text/javascript">	
 		function getSelectText(selectId){
 				// get options' text
-			if (selectId==null || selectId.length==0) {
-				alert('ID 为空！请检查！')
-				return '';
-			}
+			// if (selectId==null || selectId.length==0) {
+			// 	alert('ID 为空！请检查！')
+			// 	return '';
+			// }
 			var objSel = document.getElementById(selectId);
-			if (objSel==null) {
-				alert('ID 为' + selectId + '的下拉菜单不存在！');
-				return '';
-			}
+			// if (objSel==null) {
+			// 	alert('ID 为' + selectId + '的下拉菜单不存在！');
+			// 	return '';
+			// }
 			var selectVal = objSel.value;
 			var ops = objSel.options;
-			if (ops==null || ops.length==0) {
-				return '';
-			}
+			// if (ops==null || ops.length==0) {
+			// 	return '';
+			// }
 			for (var i=0; i<ops.length; i++) {
 				if (selectVal==ops[i].value){
 					return ops[i].text;
+				}
+			}
+			return '';
+		}	
+	</script>
+	<script language="JavaScript" type="text/javascript">	
+		function getNext(selectId){
+			var objSel = document.getElementById(selectId);
+			var selectVal = objSel.value;
+			var ops = objSel.options;
+			for (var i=0; i<ops.length; i++) {
+				if (selectVal==ops[i].value){
+					if (ops.length != i+1)
+						ops[i+1].selected = true;
+					return ops[i].getAttributeNode('next').value;
 				}
 			}
 			return '';
