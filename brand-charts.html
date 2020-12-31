@@ -19,7 +19,7 @@
 	<div class="wrapper">
 		<nav id="sidebar" class="sidebar">
 			<div class="sidebar-content js-simplebar">
-				<a class="sidebar-brand" href="./index.html" align="center">					<!-- 相对路径 -->
+				<a class="sidebar-brand" href="./index.html"  align="center">					<!-- 相对路径 -->
         			<span class="align-middle">Analytics Dashboard</span>
         		</a>
 
@@ -115,7 +115,6 @@
           			<i class="hamburger align-self-center"></i>
         		</a>
 				<span><font size=3>Toggle Details</font></span>
-
 				<div class="navbar-collapse collapse">
 					<ul class="navbar-nav navbar-align">
 						<li class="nav-item dropdown">
@@ -135,94 +134,105 @@
 			<main class="content" style="background-color: #1a1c1d;">
 				<div class="container-fluid p-0">
 
-					<h1 class="h3 mb-3" style="color:#889099">Template</h1>
-
 					<div class="row">
-						<div class="col-12 col-lg-6">
-							<div class="card flex-fill w-100">
-								<div class="card-header">
-									<h5 class="card-title">Line Chart</h5>
-									<h6 class="card-subtitle text-muted">A line chart is a way of plotting data points on a line.</h6>
-								</div>
-								<div class="card-body">
-									<div class="chart">
-										<canvas id="chartjs-line"></canvas>
+
+						<div class="col-12 col-lg-6 order-1" style="width:100%; height:800px;">
+
+							<div class="col-12">
+								<div class="card flex-fill w-100">
+									<div class="btn-group" id="buttons">
+										<div class="btn btn-primary"><span>选择品牌&nbsp;&nbsp;➤</span></div>
+										<select name="selector" id="selector" class='btn btn-github' style="border-width: 2px; border-color: #3B7DDD; border-style: groove;">
+											<option v-for="r in rows">{{r.brand}}</option>
+										</select>
+										<input 
+											type="button" class="btn btn-info"
+											value="刷新 ↺ "
+											onclick="
+												var brand=getSelectText('selector');
+												getElementById('fig1').getAttributeNode('src').value = './grouping/brands/' + brand + '-map.html';
+												getElementById('fig2').getAttributeNode('src').value = './grouping/brands/' + brand + '-keyword.html';
+												getElementById('fig3').getAttributeNode('src').value = './grouping/brands/' + brand + '-price.html';
+												getElementById('fig4').getAttributeNode('src').value = './grouping/brands/' + brand + '-score.html';
+											"
+										>
 									</div>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="card flex-fill w-100">
+									<!-- <p class="h4" style="color:#889099;">
+										&nbsp;各区店铺地点分布
+										<font size=2 color='666875'>&nbsp;|&nbsp;地图可进行滚动缩放，拖拽移动</font>
+									</p> -->
+									<iframe id="fig1"
+									marginwidth=0 
+									marginheight=0
+									width="100%" 
+									height="360"
+									src="./grouping/brands/CoCo都可-map.html" 
+									frameborder="no" 
+									scrolling="no">
+									</iframe>
+								</div>
+							</div>
+
+<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 1), rgba(60, 112, 198, 0.4), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+
+							<div class="col-12">
+								<div class="card flex-fill w-100">
+									<iframe id="fig2"
+									marginwidth=0 
+									marginheight=0
+									width="100%" 
+									height="360"
+									src="./grouping/brands/CoCo都可-keyword.html"  
+									frameborder="no" 
+									scrolling="no">
+									</iframe>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-12 col-lg-6">
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Bar Chart</h5>
-									<h6 class="card-subtitle text-muted">A bar chart provides a way of showing data values represented as vertical bars.</h6>
+						<div class="col-12 col-lg-6 order-2" style="width:100%; height:800px;">
+							<div class="col-12">
+								<div class="card flex-fill w-100">
+									<p class="h4" style="color:#889099;">
+										<button class="btn btn-outline-primary btn-square"><font color='#DDDEEE'>&nbsp;&nbsp;人均消费分布&nbsp;&nbsp;</font></button>
+										<font size=2 color='#889099'>&nbsp;&nbsp;品牌店铺人均消费区间数量分布及其统计值</font>
+									</p>
+									<iframe id="fig3"
+									marginwidth=0 
+									marginheight=0
+									width="100%" 
+									height="360"
+									src="./grouping/brands/CoCo都可-price.html"  
+									frameborder="no" 
+									scrolling="no">
+									</iframe>
 								</div>
-								<div class="card-body">
-									<div class="chart">
-										<canvas id="chartjs-bar"></canvas>
-									</div>
+							</div>
+							<div class="col-12 d-flex">
+								<div class="card flex-fill w-100">
+									<p class="h4" style="color:#889099;">
+										<button class="btn btn-outline-primary btn-square"><font color='#DDDEEE'>&nbsp;&nbsp;评分均值分布&nbsp;&nbsp;</font></button>
+										<font size=2 color='#889099'>&nbsp;&nbsp;品牌店铺评分均值区间数量分布及其统计值</font>
+									</p>
+									<iframe id="fig4"
+									marginwidth=0 
+									marginheight=0
+									width="100%" 
+									height="360"
+									src="./grouping/brands/CoCo都可-score.html"  
+									frameborder="no" 
+									scrolling="no">
+									</iframe>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-12 col-lg-6">
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Doughnut Chart</h5>
-									<h6 class="card-subtitle text-muted">Doughnut charts are excellent at showing the relational proportions between data.</h6>
-								</div>
-								<div class="card-body">
-									<div class="chart chart-sm">
-										<canvas id="chartjs-doughnut"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-lg-6">
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Pie Chart</h5>
-									<h6 class="card-subtitle text-muted">Pie charts are excellent at showing the relational proportions between data.</h6>
-								</div>
-								<div class="card-body">
-									<div class="chart chart-sm">
-										<canvas id="chartjs-pie"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-lg-6">
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Radar Chart</h5>
-									<h6 class="card-subtitle text-muted">A radar chart is a way of showing multiple data points and the variation between them.</h6>
-								</div>
-								<div class="card-body">
-									<div class="chart">
-										<canvas id="chartjs-radar"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-lg-6">
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Polar Area Chart</h5>
-									<h6 class="card-subtitle text-muted">Polar area charts are similar to pie charts, but each segment has the same angle.</h6>
-								</div>
-								<div class="card-body">
-									<div class="chart">
-										<canvas id="chartjs-polar-area"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
-
 				</div>
 			</main>
 
@@ -254,233 +264,45 @@
 	</div>
 
 	<script src="./js/app.js"></script>		<!-- 相对路径 -->
-
+	<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 	<script>
-		$(function() {
-			// Line chart
-			new Chart(document.getElementById("chartjs-line"), {
-				type: "line",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-					datasets: [{
-						label: "Sales ($)",
-						fill: true,
-						backgroundColor: "transparent",
-						borderColor: window.theme.primary,
-						data: [2115, 1562, 1584, 1892, 1487, 2223, 2966, 2448, 2905, 3838, 2917, 3327]
-					}, {
-						label: "Orders",
-						fill: true,
-						backgroundColor: "transparent",
-						borderColor: "#adb5bd",
-						borderDash: [4, 4],
-						data: [958, 724, 629, 883, 915, 1214, 1476, 1212, 1554, 2128, 1466, 1827]
-					}]
-				},
-				options: {
-					maintainAspectRatio: false,
-					legend: {
-						display: false
-					},
-					tooltips: {
-						intersect: false
-					},
-					hover: {
-						intersect: true
-					},
-					plugins: {
-						filler: {
-							propagate: false
-						}
-					},
-					scales: {
-						xAxes: [{
-							reverse: true,
-							gridLines: {
-								color: "rgba(0,0,0,0.05)"
-							}
-						}],
-						yAxes: [{
-							ticks: {
-								stepSize: 500
-							},
-							display: true,
-							borderDash: [5, 5],
-							gridLines: {
-								color: "rgba(0,0,0,0)",
-								fontColor: "#fff"
-							}
-						}]
+		$(document).ready(function () {
+				// load cities list using vue
+			$.getJSON("./data/brands.json", function (result, status) {
+				var v = new Vue({
+					el: '#buttons',
+					data: {
+						rows: result
 					}
-				}
+				})
 			});
 		});
 	</script>
-	<script>
-		$(function() {
-			// Bar chart
-			new Chart(document.getElementById("chartjs-bar"), {
-				type: "bar",
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-					datasets: [{
-						label: "Last year",
-						backgroundColor: window.theme.primary,
-						borderColor: window.theme.primary,
-						hoverBackgroundColor: window.theme.primary,
-						hoverBorderColor: window.theme.primary,
-						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
-						barPercentage: .75,
-						categoryPercentage: .5
-					}, {
-						label: "This year",
-						backgroundColor: "#dee2e6",
-						borderColor: "#dee2e6",
-						hoverBackgroundColor: "#dee2e6",
-						hoverBorderColor: "#dee2e6",
-						data: [69, 66, 24, 48, 52, 51, 44, 53, 62, 79, 51, 68],
-						barPercentage: .75,
-						categoryPercentage: .5
-					}]
-				},
-				options: {
-					maintainAspectRatio: false,
-					legend: {
-						display: false
-					},
-					scales: {
-						yAxes: [{
-							gridLines: {
-								display: false
-							},
-							stacked: false,
-							ticks: {
-								stepSize: 20
-							}
-						}],
-						xAxes: [{
-							stacked: false,
-							gridLines: {
-								color: "transparent"
-							}
-						}]
-					}
+	<script language="JavaScript" type="text/javascript">	
+		function getSelectText(selectId){
+				// get options' text
+			if (selectId==null || selectId.length==0) {
+				alert('ID 为空！请检查！')
+				return '';
+			}
+			var objSel = document.getElementById(selectId);
+			if (objSel==null) {
+				alert('ID 为' + selectId + '的下拉菜单不存在！');
+				return '';
+			}
+			var selectVal = objSel.value;
+			var ops = objSel.options;
+			if (ops==null || ops.length==0) {
+				return '';
+			}
+			for (var i=0; i<ops.length; i++) {
+				if (selectVal==ops[i].value){
+					return ops[i].text;
 				}
-			});
-		});
-	</script>
-	<script>
-		$(function() {
-			// Doughnut chart
-			new Chart(document.getElementById("chartjs-doughnut"), {
-				type: "doughnut",
-				data: {
-					labels: ["Social", "Search Engines", "Direct", "Other"],
-					datasets: [{
-						data: [260, 125, 54, 146],
-						backgroundColor: [
-							window.theme.primary,
-							window.theme.success,
-							window.theme.warning,
-							"#dee2e6"
-						],
-						borderColor: "transparent"
-					}]
-				},
-				options: {
-					maintainAspectRatio: false,
-					cutoutPercentage: 65,
-					legend: {
-						display: false
-					}
-				}
-			});
-		});
-	</script>
-	<script>
-		$(function() {
-			// Pie chart
-			new Chart(document.getElementById("chartjs-pie"), {
-				type: "pie",
-				data: {
-					labels: ["Social", "Search Engines", "Direct", "Other"],
-					datasets: [{
-						data: [260, 125, 54, 146],
-						backgroundColor: [
-							window.theme.primary,
-							window.theme.warning,
-							window.theme.danger,
-							"#dee2e6"
-						],
-						borderColor: "transparent"
-					}]
-				},
-				options: {
-					maintainAspectRatio: false,
-					legend: {
-						display: false
-					}
-				}
-			});
-		});
-	</script>
-	<script>
-		$(function() {
-			// Radar chart
-			new Chart(document.getElementById("chartjs-radar"), {
-				type: "radar",
-				data: {
-					labels: ["Speed", "Reliability", "Comfort", "Safety", "Efficiency"],
-					datasets: [{
-						label: "Model X",
-						backgroundColor: "rgba(0, 123, 255, 0.2)",
-						borderColor: window.theme.primary,
-						pointBackgroundColor: window.theme.primary,
-						pointBorderColor: "#fff",
-						pointHoverBackgroundColor: "#fff",
-						pointHoverBorderColor: window.theme.primary,
-						data: [70, 53, 82, 60, 33]
-					}, {
-						label: "Model S",
-						backgroundColor: "rgba(220, 53, 69, 0.2)",
-						borderColor: window.theme.danger,
-						pointBackgroundColor: window.theme.danger,
-						pointBorderColor: "#fff",
-						pointHoverBackgroundColor: "#fff",
-						pointHoverBorderColor: window.theme.danger,
-						data: [35, 38, 65, 85, 84]
-					}]
-				},
-				options: {
-					maintainAspectRatio: false
-				}
-			});
-		});
-	</script>
-	<script>
-		$(function() {
-			// Polar Area chart
-			new Chart(document.getElementById("chartjs-polar-area"), {
-				type: "polarArea",
-				data: {
-					labels: ["Speed", "Reliability", "Comfort", "Safety", "Efficiency"],
-					datasets: [{
-						label: "Model S",
-						data: [35, 38, 65, 70, 24],
-						backgroundColor: [
-							window.theme.primary,
-							window.theme.success,
-							window.theme.danger,
-							window.theme.warning,
-							window.theme.info
-						]
-					}]
-				},
-				options: {
-					maintainAspectRatio: false
-				}
-			});
-		});
+			}
+			return '';
+		}	
 	</script>
 
 </body>
