@@ -159,27 +159,13 @@
 											type="button" class="btn btn-info"
 											style="background-color: rgba(59, 125, 221, 0.6); border-color: #3B7DDD; border-width: 3px; border-left-style: hidden;"
 											value="刷新 ↺ "
-											onclick="
-													var city=getSelectText('selector');
-													getElementById('fig1').getAttributeNode('src').value = './grouping/cities/' + city + '-map-scatter.html';
-													getElementById('fig2').getAttributeNode('src').value = './grouping/cities/' + city + '-bar-line.html';
-													getElementById('fig3').getAttributeNode('src').value = './grouping/cities/' + city + '-bar-pie.html';
-												"
+											onclick="var city=getSelectText('selector'); getElementById('fig1').getAttributeNode('src').value = './grouping/cities/' + city + '-map-scatter.html'; getElementById('fig2').getAttributeNode('src').value = './grouping/cities/' + city + '-bar-line.html'; getElementById('fig3').getAttributeNode('src').value = './grouping/cities/' + city + '-bar-pie.html';"
 											>
 										<input 
 											type="button" class="btn btn-info" 
 											style="background-color: rgba(23, 162, 184, 0.6); border-color: #3B7DDD; border-width: 3px; border-left-style: hidden;"
 											value="下一个 ▼ "
-											onclick="
-													var next = getNext('selector')
-													if (!next) {
-														alert('已经是最后一个啦！')
-													}else{
-														getElementById('fig1').getAttributeNode('src').value = './grouping/cities/' + next + '-map-scatter.html';
-														getElementById('fig2').getAttributeNode('src').value = './grouping/cities/' + next + '-bar-line.html';
-														getElementById('fig3').getAttributeNode('src').value = './grouping/cities/' + next + '-bar-pie.html';
-													}
-												"
+											onclick="var next = getNext('selector'); if (!next) {alert('已经是最后一个啦！');}else{getElementById('fig1').getAttributeNode('src').value = './grouping/cities/' + next + '-map-scatter.html'; getElementById('fig2').getAttributeNode('src').value = './grouping/cities/' + next + '-bar-line.html'; getElementById('fig3').getAttributeNode('src').value = './grouping/cities/' + next + '-bar-pie.html';}"
 											>
 									</div>
 								</div>

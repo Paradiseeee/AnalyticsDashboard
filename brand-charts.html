@@ -149,29 +149,13 @@
 											type="button" class="btn btn-info"
 											value="刷新 ↺ "
 											style="background-color: rgba(59, 125, 221, 0.6); border-color: #3B7DDD; border-width: 3px; border-left-style: hidden;"
-											onclick="
-													var brand=getSelectText('selector');
-													getElementById('fig1').getAttributeNode('src').value = './grouping/brands/' + brand + '-map.html';
-													getElementById('fig2').getAttributeNode('src').value = './grouping/brands/' + brand + '-keyword.html';
-													getElementById('fig3').getAttributeNode('src').value = './grouping/brands/' + brand + '-price.html';
-													getElementById('fig4').getAttributeNode('src').value = './grouping/brands/' + brand + '-score.html';
-												"
+											onclick="var brand=getSelectText('selector'); getElementById('fig1').getAttributeNode('src').value = './grouping/brands/' + brand + '-map.html'; getElementById('fig2').getAttributeNode('src').value = './grouping/brands/' + brand + '-keyword.html'; getElementById('fig3').getAttributeNode('src').value = './grouping/brands/' + brand + '-price.html'; getElementById('fig4').getAttributeNode('src').value = './grouping/brands/' + brand + '-score.html';"
 											>
 										<input 
 											type="button" class="btn btn-info" 
 											style="background-color: rgba(23, 162, 184, 0.6); border-color: #3B7DDD; border-width: 3px; border-left-style: hidden;"
 											value="下一个 ▼ "
-											onclick="
-													var next = getNext('selector')
-													if (!next) {
-														alert('已经是最后一个啦！')
-													}else{
-													getElementById('fig1').getAttributeNode('src').value = './grouping/brands/' + next + '-map.html';
-													getElementById('fig2').getAttributeNode('src').value = './grouping/brands/' + next + '-keyword.html';
-													getElementById('fig3').getAttributeNode('src').value = './grouping/brands/' + next + '-price.html';
-													getElementById('fig4').getAttributeNode('src').value = './grouping/brands/' + next + '-score.html';
-													}
-												"
+											onclick="var next = getNext('selector'); if (!next) {alert('已经是最后一个啦！');}else{getElementById('fig1').getAttributeNode('src').value = './grouping/brands/' + next + '-map.html'; getElementById('fig2').getAttributeNode('src').value = './grouping/brands/' + next + '-keyword.html'; getElementById('fig3').getAttributeNode('src').value = './grouping/brands/' + next + '-price.html'; getElementById('fig4').getAttributeNode('src').value = './grouping/brands/' + next + '-score.html';}"
 											>
 									</div>
 								</div>
