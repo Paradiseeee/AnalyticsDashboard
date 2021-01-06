@@ -134,30 +134,11 @@
 
 			<main class="content" style="background-color: #1a1c1d;color:#889099;">
 				<div class="container-fluid p-0">
-					<h1 class="h3 mb-3" style="color:#889099">
-						品牌特征聚类分析
-						<font size=2 style="color:#667080;">&nbsp;|&nbsp; 模型性能受数据限制，只简单选择了解释性较高的模型；所有模型信息在 <a href="./clustering-dump.html" target="_blank">这里</a> 查看。</font>
-					</h1>
-					<a href="#"><button class="btn btn-outline-primary" style="border-bottom-style: hidden; border-radius: 0%;">Clustering</button></a>
-					<a href="#"><button class="btn btn-outline-secondary" disabled>Regression</button></a>
-					<hr style="margin-top: 0px; max-width: 100%;color: rgb(53, 53, 53);height: 2px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 1), rgba(60, 112, 198, 0.4), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
-					<div class="row">
-						<div class="col-12">
-							<div class="card flex-fill w-100">
-								<iframe id="fig3"
-								marginwidth=0 
-								marginheight=0
-								width="100%" 
-								height="600"
-								src="./charts/[modeling]standard_normalize-3-0.7206.html"  
-								frameborder="no" 
-								scrolling="no">
-								</iframe>
-							</div>
-						</div>
-					</div>
-					<hr style="margin-top: 0px; max-width: 100%;color: rgb(53, 53, 53);height: 2px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 1), rgba(60, 112, 198, 0.4), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
-
+                    <div id='links'>
+                        <ul>
+                            <li v-for="r in rows"><a v-bind:href="'./data/clustering-dump/' + r.link" target="_blank">{{r.link}}</a></li>
+                        </ul>
+                    </div>
 				</div>
 			</main>
 
@@ -189,6 +170,20 @@
 	</div>
 
 	<script src="./js/app.js"></script>		<!-- 相对路径 -->
+	<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$.getJSON("./data/clustering-dump/charts.json", function (result, status) {
+				var v = new Vue({
+					el: '#links',
+					data: {
+						rows: result
+					}
+				})
+			});
+		});
+	</script>
 
 </body>
 
