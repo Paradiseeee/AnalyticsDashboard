@@ -135,6 +135,8 @@
 			<main class="content" style="background-color: #1a1c1d;color:#889099;">
 				<div class="container-fluid p-0">
                     <div id='links'>
+						<button class="btn btn-outline-info" style="border-radius: 0%;">所有模型：特征缩放方法-聚类数量-轮廓系数.html</button>
+						<br><br>
                         <ul>
                             <li v-for="r in rows"><a v-bind:href="'./data/clustering-dump/' + r.link" target="_blank">{{r.link}}</a></li>
                         </ul>
@@ -174,7 +176,7 @@
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			$.getJSON("./data/clustering-dump/charts.json", function (result, status) {
+			$.getJSON("./data/clustering-dump.json", function (result, status) {
 				var v = new Vue({
 					el: '#links',
 					data: {
