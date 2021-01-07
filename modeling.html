@@ -140,7 +140,8 @@
 					</h1>
 					<a href="#"><button class="btn btn-outline-primary" style="border-bottom-style: hidden; border-radius: 0%;">Clustering</button></a>
 					<a href="#"><button class="btn btn-outline-secondary" disabled>Regression</button></a>
-					<hr style="margin-top: 0px; max-width: 100%;color: rgb(53, 53, 53);height: 2px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 1), rgba(60, 112, 198, 0.4), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+					<hr style="margin-top: 0px; max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 1), rgba(60, 112, 198, 1), rgba(60, 112, 198, 1));box-sizing: border-box !important;word-wrap: break-word !important;">
+
 					<div class="row">
 						<div class="col-12">
 							<div class="card flex-fill w-100">
@@ -156,7 +157,87 @@
 							</div>
 						</div>
 					</div>
-					<hr style="margin-top: 0px; max-width: 100%;color: rgb(53, 53, 53);height: 2px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 1), rgba(60, 112, 198, 0.4), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+
+					<div class="row">
+						<div class="col-xl-4 col-xxl-4">
+							<iframe 
+							marginwidth=0 
+							marginheight=0
+							width="100%" 
+							height="360"
+							src="./charts/[modeling]Cluster-No.1.html" 
+							frameborder="no" 
+							scrolling="no">
+							</iframe>
+						</div>
+						<div class="col-xl-4 col-xxl-4">
+							<iframe 
+							marginwidth=0 
+							marginheight=0
+							width="100%" 
+							height="360"
+							src="./charts/[modeling]Cluster-No.2.html" 
+							frameborder="no" 
+							scrolling="no">
+							</iframe>
+						</div>
+						<div class="col-xl-4 col-xxl-4">
+							<iframe 
+							marginwidth=0 
+							marginheight=0
+							width="100%" 
+							height="360"
+							src="./charts/[modeling]Cluster-No.3.html" 
+							frameborder="no" 
+							scrolling="no">
+							</iframe>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xl-4 col-xxl-4" id="sheet1">
+							<table class="table" style="font-size: 0.5em; width: 99%; line-height: 2px;">
+								<thead>
+									<tr style="color:#6D84A5">
+										<th>Cluster No.1</th><th>avgprice</th><th>avgscore</th><th>counts</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr v-for="r in rows">
+										<td>{{r.title}}</td><td>{{r.avgprice}}</td><td>{{r.avgscore}}</td><td>{{r.counts}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-xl-4 col-xxl-4" id="sheet2">
+							<table class="table" style="font-size: 0.5em; width: 99%; line-height: 2px;">
+								<thead>
+									<tr style="color:#B50A24">
+										<th>Cluster No.2</th><th>avgprice</th><th>avgscore</th><th>counts</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr v-for="r in rows">
+										<td>{{r.title}}</td><td>{{r.avgprice}}</td><td>{{r.avgscore}}</td><td>{{r.counts}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-xl-4 col-xxl-4" id="sheet3">
+							<table class="table" style="font-size: 0.5em; width: 99%; line-height: 2px;">
+								<thead>
+									<tr style="color:#F49F45">
+										<th>Cluster No.3</th><th>avgprice</th><th>avgscore</th><th>counts</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr v-for="r in rows">
+										<td>{{r.title}}</td><td>{{r.avgprice}}</td><td>{{r.avgscore}}</td><td>{{r.counts}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 
 				</div>
 			</main>
@@ -189,6 +270,44 @@
 	</div>
 
 	<script src="./js/app.js"></script>		<!-- 相对路径 -->
+	<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$.getJSON("./data/cluster-1.json", function (result, status) {
+				var v = new Vue({
+					el: '#sheet1',
+					data: {
+						rows: result
+					}
+				})
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$.getJSON("./data/cluster-2.json", function (result, status) {
+				var v = new Vue({
+					el: '#sheet2',
+					data: {
+						rows: result
+					}
+				})
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$.getJSON("./data/cluster-3.json", function (result, status) {
+				var v = new Vue({
+					el: '#sheet3',
+					data: {
+						rows: result
+					}
+				})
+			});
+		});
+	</script>
 
 </body>
 
