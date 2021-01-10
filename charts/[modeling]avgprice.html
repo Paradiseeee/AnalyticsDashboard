@@ -342,7 +342,7 @@
                 "opacity": 0
             },
             "itemStyle": {
-                "color": "#A35300"
+                "color": "#FFCD42"
             },
             "zlevel": 0,
             "z": 0,
@@ -604,11 +604,70 @@
     ],
     "title": [
         {
-            "text": "avgprice",
+            "text": "R² = 0.92",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textStyle":{
+                "color": "#22DDEE",
+                "fontFamily": "Courier New",
+                "fontSize": 16
+            }
         }
-    ]
+    ],
+"toolbox": {
+        "show": true,
+        "orient": "vertical",
+        "itemSize": 15,
+        "itemGap": 10,
+        "right": "2%",
+        "bottom": "center",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    }
 };
         chart_6761e4100b704c7fab1b73a5183bcfc0.setOption(option_6761e4100b704c7fab1b73a5183bcfc0);
             window.addEventListener('resize', function(){
