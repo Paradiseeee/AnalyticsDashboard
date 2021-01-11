@@ -217,7 +217,10 @@
 
 					<div class="row">
 						<div class="col-xl-4 col-xxl-4" id="sheet1">
-							<table class="table" style="font-size: 0.5em; width: 99%; line-height: 2px;">
+							<table class="table table-bordered mb-0" style="font-size: 1em; line-height: 2px;">
+							<!-- 上面定义了 line height 会在设备宽度较小时无法换行文字重叠 -->
+							<!-- 下面字太小，瞎眼 -->
+							<!-- <table class="table" style="font-size: 0.5em; width: 99%; line-height: 2px;"> -->
 								<thead>
 									<tr style="color:#6D84A5">
 										<th>Cluster No.1</th><th>avgprice</th><th>avgscore</th><th>counts</th>
@@ -231,7 +234,7 @@
 							</table>
 						</div>
 						<div class="col-xl-4 col-xxl-4" id="sheet2">
-							<table class="table" style="font-size: 0.5em; width: 99%; line-height: 2px;">
+							<table class="table table-bordered mb-0" style="font-size: 1em; line-height: 2px;">
 								<thead>
 									<tr style="color:#B50A24">
 										<th>Cluster No.2</th><th>avgprice</th><th>avgscore</th><th>counts</th>
@@ -245,7 +248,7 @@
 							</table>
 						</div>
 						<div class="col-xl-4 col-xxl-4" id="sheet3">
-							<table class="table" style="font-size: 0.5em; width: 99%; line-height: 2px;">
+							<table class="table table-bordered mb-0" style="font-size: 1em; line-height: 2px;">
 								<thead>
 									<tr style="color:#F49F45">
 										<th>Cluster No.3</th><th>avgprice</th><th>avgscore</th><th>counts</th>
