@@ -1,5 +1,4 @@
 {
-    "//": "直接写死在 js 函数里面了，懒得加载",
     "label": "avgprice",
     "columns": ["GDP", "Pop", "latitude", "longitude"],
     "poly-degree": 2,
