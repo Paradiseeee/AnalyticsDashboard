@@ -119,7 +119,7 @@
             			</a>
 					</li>
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="https://paradiseeee.github.io" style="color:#2DCBFF;">
+						<a class="sidebar-link" href="https://paradiseeee.github.io" style="color:#2DCBFF;" id="back">
               				<i class="align-middle" data-feather="chevrons-left" style="color:#2DCBFF;"></i>
 							<span class="align-middle">Back to Home</span>
             			</a>
@@ -334,6 +334,7 @@
 		});
 	</script>
 
+    <script>var host = window.location.host.split('.')[1];var home = document.getElementById('back');if (host == 'gitee'){home.getAttributeNode('href').value = 'https://paradiseeee.gitee.io/blog';}</script>
 </body>
 
 </html>
