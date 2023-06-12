@@ -1,0 +1,22 @@
+[
+{"brand": "CoCo都可", "next": "蜜雪冰城"},
+{"brand": "蜜雪冰城", "next": "1 點點"},
+{"brand": "1 點點", "next": "书亦烧仙草"},
+{"brand": "书亦烧仙草", "next": "贡茶"},
+{"brand": "贡茶", "next": "古茗"},
+{"brand": "古茗", "next": "快乐柠檬"},
+{"brand": "快乐柠檬", "next": "益禾堂"},
+{"brand": "益禾堂", "next": "沪上阿姨"},
+{"brand": "沪上阿姨", "next": "茶百道"},
+{"brand": "茶百道", "next": "喜茶"},
+{"brand": "喜茶", "next": "阿水大杯茶"},
+{"brand": "阿水大杯茶", "next": "吾饮良品"},
+{"brand": "吾饮良品", "next": "奈雪的茶"},
+{"brand": "奈雪的茶", "next": "黑泷堂"},
+{"brand": "黑泷堂", "next": "张阿姨奶茶"},
+{"brand": "张阿姨奶茶", "next": "丸摩堂"},
+{"brand": "丸摩堂", "next": "一芳台湾水果茶"},
+{"brand": "一芳台湾水果茶", "next": "TANING挞柠"},
+{"brand": "TANING挞柠", "next": "本宫的茶"},
+{"brand": "本宫的茶", "next": null}
+]

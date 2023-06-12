@@ -1,0 +1,372 @@
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Web UI Kit &amp; Dashboard Template based on Bootstrap">
+	<meta name="author" content="Paradise">
+	<meta name="keywords" content="adminkit, bootstrap, web ui kit, dashboard template, admin template">
+	<link rel="shortcut icon" href="./favicon.ico" />		<!-- 相对路径 -->
+	<title>茶饮产品市场分析 | Original by Paradise</title>
+	<link href="./css/app.css" rel="stylesheet">			<!-- 相对路径 -->
+	<style>
+		.form-custom-style{
+			background-color: #1a1c1d;
+			color: #889099;
+			border-color: #2DCBFF;
+		}
+	</style>
+</head>
+
+<body class="nui-scroll">
+	<div class="wrapper">
+
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="./index.html" align="center">
+        			<span class="align-middle">Analytics Dashboard</span>
+        		</a>
+
+				<ul class="sidebar-nav">
+
+					<li class="sidebar-header">
+						<p align="center"><font size=3>
+							<i class="align-middle" data-feather="paperclip"></i>
+							Summary
+						</font></p>
+						<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 0), rgba(60, 112, 198, 0.75), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./index.html">
+              				<i class="align-middle" data-feather="bar-chart-2"></i>
+							<span class="align-middle">概要</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./statistics.html">
+              				<i class="align-middle" data-feather="file-text"></i>
+							<span class="align-middle">统计</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-header">
+						<p align="center"><font size=3>
+							<i class="align-middle" data-feather="layers"></i>
+							Grouping
+						</font></p>
+						<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 0), rgba(60, 112, 198, 0.75), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./city-charts.html">
+              				<i class="align-middle" data-feather="map-pin"></i> 
+							<span class="align-middle">城市</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./brand-charts.html">
+              				<i class="align-middle" data-feather="star"></i>
+							<span class="align-middle">品牌</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-header">
+						<p align="center"><font size=3>
+							<i class="align-middle" data-feather="sliders"></i>
+							Modeling
+						</font></p>
+						<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 0), rgba(60, 112, 198, 0.75), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./clustering.html">
+              				<i class="align-middle" data-feather="target"></i>
+							<span class="align-middle">聚类</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="./regression.html">
+              				<i class="align-middle" data-feather="activity"></i>
+							<span class="align-middle">回归</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-header">
+						<p align="center"><font size=3>
+							<i class="align-middle" data-feather="database"></i>
+							Sources
+						</font></p>
+						<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 0), rgba(60, 112, 198, 0.75), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./tables-bootstrap.html">
+              				<i class="align-middle" data-feather="grid"></i> 
+							<span class="align-middle">数据</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./codes.html">
+              				<i class="align-middle" data-feather="terminal"></i>
+							<span class="align-middle">脚本</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item"><!-- place holder -->&nbsp;</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="https://github.com/paradiseeee/AnalyticsDashboard" style="color:#2DCBFF;" target="_blank">
+              				<i class="align-middle" data-feather="github" style="color:#2DCBFF;"></i>
+							<span class="align-middle">Fork on GitHub</span>
+            			</a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="https://paradiseeee.github.io" style="color:#2DCBFF;" id="back">
+              				<i class="align-middle" data-feather="chevrons-left" style="color:#2DCBFF;"></i>
+							<span class="align-middle">Back to Home</span>
+            			</a>
+					</li>
+					<li class="sidebar-item"><!-- place holder -->&nbsp;</li>
+				
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="main">
+
+			<nav class="navbar navbar-expand navbar-light navbar-bg" style="background-color: #1a1c1d;">
+				<a class="sidebar-toggle d-flex">
+          			<i class="hamburger align-self-center"></i>
+        		</a>
+				<span><font size=3>Toggle Details</font></span>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<svg t="1608008181065" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1114" width="22" height="22"><path d="M1007.575017 641.991196c0-82.700286-54.014833-152.209672-183.213905-173.34234 0.52729-29.582278 0.544578-58.179129 0.544579-84.949914H16.427144c0 245.924705 0 640.301058 404.247917 640.301058 188.711554 0 289.296487-85.967756 342.941785-202.641524 173.34234-7.289139 243.958171-84.720845 243.958171-179.36728zM215.643443 869.173326c-76.202082-112.580786-105.079866-245.503305-104.798933-380.076847 0.123178-56.633996 87.953739-56.651284 87.83056 0-0.246357 120.291325 24.698361 235.121738 92.818208 335.739087 31.847033 47.060653-44.283735 90.940276-75.849835 44.33776z m576.71072-127.863558c17.126127-62.131645 25.242939-128.654494 29.072277-193.262674 67.540692 16.776041 82.963931 51.345966 82.155707 95.822033-0.911953 50.628506-19.619951 85.075253-111.227984 97.440641zM326.661807 298.768478c14.053149-40.506262 10.258388-79.819639-5.093537-119.308058-17.074263-43.862335-39.522996-73.338723-8.114651-116.12919 33.569371-45.742427-42.704025-89.481584-75.832547-44.337761-28.352655 38.628331-36.151796 80.452819-24.030604 126.703088 11.943988 45.567384 45.355604 80.802905 28.387232 129.706913-18.621557 53.666908 66.239754 76.519753 84.684107 23.365008zM484.755951 298.768478c14.053149-40.506262 10.258388-79.819639-5.093537-119.308058-17.074263-43.862335-39.522996-73.338723-8.114651-116.12919 33.569371-45.742427-42.704025-89.481584-75.832546-44.337761-28.352655 38.628331-36.151796 80.452819-24.030604 126.703088 11.943988 45.567384 45.355604 80.802905 28.387231 129.706913-18.621557 53.666908 66.239754 76.519753 84.684107 23.365008zM642.850096 298.768478c14.053149-40.506262 10.258388-79.819639-5.093538-119.308058-17.074263-43.862335-39.522996-73.338723-8.11465-116.12919 33.569371-45.742427-42.704025-89.481584-75.832547-44.337761-28.350494 38.628331-36.151796 80.452819-24.030604 126.703088 11.943988 45.567384 45.355604 80.802905 28.387231 129.706913-18.621557 53.666908 66.239754 76.519753 84.684108 23.365008z" p-id="1115" fill="#889099"></path></svg>
+							<font size=4 color='#889099'>&nbsp;茶饮产品市场分析</font>
+						</li>
+						<li>
+							<font size=4>&nbsp;|&nbsp;</font>
+						</li>
+						<li>
+							<font size=4>2022-08-03</font>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content" style="background-color: #1a1c1d;color:#889099;">
+				<div class="container-fluid p-0">
+					<h1 class="h3 mb-3" style="color:#889099">
+						城市特征回归分析
+						<font size=2 style="color:#667080;">&nbsp;|&nbsp; 由于数据限制，不能保证模型泛化，预测<code> 仅供测试</code>。</font>
+					</h1>
+					<hr style="margin-top: 0px; max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 1), rgba(60, 112, 198, 0.6), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+					<div class="row">
+						<div class="col-12 col-xl-8">
+							<button class="btn btn-outline-primary btn-square"><font color='#DDDEEE'>店铺数量·多项式回归</font></button>
+							&nbsp;&nbsp;特征包括 GDP、常住人口、经纬度，多项式次数为 2 ，包含平方项和交互项
+							<iframe id="fig1"
+							marginwidth=0 
+							marginheight=0
+							width="100%" 
+							height="360"
+							src="./charts/[modeling]counts.html" 
+							frameborder="no" 
+							scrolling="no">
+							</iframe>
+						</div>
+						<div class="col-12 col-xl-4">
+							<button class="btn btn-outline-primary btn-square"><font color='#DDDEEE'>相关系数矩阵</font></button>
+							&nbsp;&nbsp;4 个解释变量 & 2 个目标变量
+							<iframe id="fig1"
+							marginwidth=0 
+							marginheight=0
+							width="100%" 
+							height="360"
+							src="./charts/[modeling]corr.html" 
+							frameborder="no" 
+							scrolling="no">
+							</iframe>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-xl-8">
+							<button class="btn btn-outline-primary btn-square"><font color='#DDDEEE'>人均消费·多项式回归</font></button>
+							&nbsp;&nbsp;同上
+							<iframe id="fig1"
+							marginwidth=0 
+							marginheight=0
+							width="100%" 
+							height="360"
+							src="./charts/[modeling]avgprice.html" 
+							frameborder="no" 
+							scrolling="no">
+							</iframe>
+						</div>
+						<div class="col-12 col-xl-4">
+							<button class="btn btn-outline-primary btn-square"><font color='#DDDEEE'>模型预测</font><sup><font color="#ff0000"> Beta</font></sup></button>
+							&nbsp;&nbsp;根据页面上方提示输入相应变量
+							<br><br>
+							<form>
+								<div class="form-group">
+									<table class="table">
+										<thead style="text-align: center; font-size: 0.5em;">
+											<tr>
+												<td>生产总值（亿元）</td><td>经度</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input id="gdp" class="form-control form-custom-style" placeholder="0.0" /></td>
+												<td><input id="long" class="form-control form-custom-style" placeholder="0.0" /></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="table">
+										<thead style="text-align: center; font-size: 0.5em;">
+											<tr>
+												<td>常住人口（万人）</td><td>纬度</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input id="pop" class="form-control form-custom-style" placeholder="0.0" /></td>
+												<td><input id="lat" class="form-control form-custom-style" placeholder="0.0" /></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</form>
+							<input 
+								type="button" class="btn btn-primary" value="↺ 数量预测" style="border-left-style: hidden; border-right-style: hidden; border-top-style: hidden; border-bottom-style: hidden;"
+								onclick="getElementById('predCount').innerText=predict('counts');"
+								>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<button 
+								id = "predCount" class="btn btn-outline-info" 
+								style="border-left-style: hidden; border-right-style: hidden; border-top-style: hidden; border-radius: 0%; color: #DDDEEE; border-color: #3B7DDD;">
+								0.0
+							</button>
+							<br><br>
+							<input 
+								type="button" class="btn btn-primary" value="↺ 价格预测" style="border-left-style: hidden; border-right-style: hidden; border-top-style: hidden; border-bottom-style: hidden;"
+								onclick="getElementById('predPrice').innerText=predict('avgprice');"
+								>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<button 
+								id = "predPrice" class="btn btn-outline-info" 
+								style="border-left-style: hidden; border-right-style: hidden; border-top-style: hidden; border-radius: 0%; color: #DDDEEE; border-color: #3B7DDD;">
+								0.0
+							</button>
+							<br><br>
+						</div>
+					</div>
+
+					<div class="col-12 col-xl-12">
+						<button class="btn btn-outline-primary btn-square" style="border-bottom-style: hidden;"><font color='#DDDEEE'>训练数据</font></button>
+						<hr style="margin-top: 0px; max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 1), rgba(60, 112, 198, 0.6), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+						<div class="table-responsive" id="sheet1">
+							<table class="table table-bordered mb-0" style="font-size: 1em; line-height: 2px;">
+								<thead>
+									<tr style="text-align: center;">
+										<th>城市</th><th>人均消费</th><th>经度中心</th><th>纬度中心</th><th>生产总值</th><th>常住人口</th><th>店铺数量</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr v-for="r in rows">
+										<td>{{r.city}}</td><td>{{r.avgprice}}</td><td>{{r.longitude}}</td><td>{{r.latitude}}</td><td>{{r.GDP}}</td><td>{{r.Pop}}</td><td>{{r.counts}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer" style="background-color: #1a1c1d;">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-left">
+							<p class="mb-0">
+								<a href="index.html" class="text-muted"><strong>Analytics Dashboard Original by Paradise</strong></a> &copy;
+							</p>
+						</div>
+						<div class="col-6 text-right">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://github.com/paradiseeee"><font color="#2DCBFF">About Me</font></a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://paradiseeee.github.io"><font color="#2DCBFF">My Blog</font></a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="mailto:paradise-yang@outlook.com?subject=From%20Paradise%27s%20Blog"><font color="#2DCBFF">Email Me</font></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+	</div>
+
+	<script src="./js/app.js"></script>		<!-- 相对路径 -->
+	<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		function predict(label_name){
+			var gdp = parseFloat(document.getElementById('gdp').value);
+			var pop = parseFloat(document.getElementById('pop').value);
+			var lat = parseFloat(document.getElementById('lat').value);
+			var long = parseFloat(document.getElementById('long').value);
+			var model = getModel(label_name)
+			var intercept = model.intercept;
+			var coefs = model.coefs;
+			var y = intercept + 
+				coefs[0] * gdp + coefs[1] * pop + coefs[2] * lat + coefs[3] * long + 
+				coefs[4] * gdp * gdp + coefs[5] * gdp * pop + coefs[6] * gdp * lat + coefs[7] * gdp * long +
+				coefs[8] * pop *pop + coefs[9] * pop * lat + coefs[10] * pop * long +
+				coefs[11] * lat * lat + coefs[12] * lat * long +
+				coefs[13] * long * long;
+			if (isNaN(y)){
+				return '输入有误！';
+			}else{
+				return y;
+			}
+		}
+		function getModel(label_name){
+			var dict = null;
+			$.ajaxSettings.async = false;	// 允许 getJson 更改外面的变量
+			$.getJSON("./data/"+label_name+".json", "", function(data) {
+			// each循环 使用$.each方法遍历返回的数据date
+				dict = data;
+			});
+			return dict;
+		}
+	</script>
+	<script>
+		$(document).ready(function () {
+			$.getJSON("./data/regression_data.json", function (result, status) {
+				var v = new Vue({
+					el: '#sheet1',
+					data: {
+						rows: result
+					}
+				})
+			});
+		});
+	</script>
+
+    <script>var host = window.location.host.split('.')[1];var home = document.getElementById('back');if (host == 'gitee'){home.getAttributeNode('href').value = 'https://paradiseeee.gitee.io/blog';}</script>
+</body>
+
+</html>

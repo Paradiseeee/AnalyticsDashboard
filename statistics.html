@@ -1,0 +1,387 @@
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Web UI Kit &amp; Dashboard Template based on Bootstrap">
+	<meta name="author" content="Paradise">
+	<meta name="keywords" content="adminkit, bootstrap, web ui kit, dashboard template, admin template">
+
+	<link rel="shortcut icon" href="./favicon.ico" />		<!-- 相对路径 -->
+
+	<title>茶饮产品市场分析 | Original by Paradise</title>
+
+	<link href="./css/app.css" rel="stylesheet">			<!-- 相对路径 -->
+</head>
+
+<body class="nui-scroll">
+	<div class="wrapper">
+
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="./index.html" align="center">
+        			<span class="align-middle">Analytics Dashboard</span>
+        		</a>
+
+				<ul class="sidebar-nav">
+
+					<li class="sidebar-header">
+						<p align="center"><font size=3>
+							<i class="align-middle" data-feather="paperclip"></i>
+							Summary
+						</font></p>
+						<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 0), rgba(60, 112, 198, 0.75), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./index.html">
+              				<i class="align-middle" data-feather="bar-chart-2"></i>
+							<span class="align-middle">概要</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="./statistics.html">
+              				<i class="align-middle" data-feather="file-text"></i>
+							<span class="align-middle">统计</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-header">
+						<p align="center"><font size=3>
+							<i class="align-middle" data-feather="layers"></i>
+							Grouping
+						</font></p>
+						<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 0), rgba(60, 112, 198, 0.75), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./city-charts.html">
+              				<i class="align-middle" data-feather="map-pin"></i> 
+							<span class="align-middle">城市</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./brand-charts.html">
+              				<i class="align-middle" data-feather="star"></i>
+							<span class="align-middle">品牌</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-header">
+						<p align="center"><font size=3>
+							<i class="align-middle" data-feather="sliders"></i>
+							Modeling
+						</font></p>
+						<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 0), rgba(60, 112, 198, 0.75), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./clustering.html">
+              				<i class="align-middle" data-feather="target"></i>
+							<span class="align-middle">聚类</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./regression.html">
+              				<i class="align-middle" data-feather="activity"></i>
+							<span class="align-middle">回归</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-header">
+						<p align="center"><font size=3>
+							<i class="align-middle" data-feather="database"></i>
+							Sources
+						</font></p>
+						<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 0), rgba(60, 112, 198, 0.75), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./tables-bootstrap.html">
+              				<i class="align-middle" data-feather="grid"></i> 
+							<span class="align-middle">数据</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./codes.html">
+              				<i class="align-middle" data-feather="terminal"></i>
+							<span class="align-middle">脚本</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item"><!-- place holder -->&nbsp;</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="https://github.com/paradiseeee/AnalyticsDashboard" style="color:#2DCBFF;" target="_blank">
+              				<i class="align-middle" data-feather="github" style="color:#2DCBFF;"></i>
+							<span class="align-middle">Fork on GitHub</span>
+            			</a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="https://paradiseeee.github.io" style="color:#2DCBFF;" id="back">
+              				<i class="align-middle" data-feather="chevrons-left" style="color:#2DCBFF;"></i>
+							<span class="align-middle">Back to Home</span>
+            			</a>
+					</li>
+					<li class="sidebar-item"><!-- place holder -->&nbsp;</li>
+				
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="main">
+
+			<nav class="navbar navbar-expand navbar-light navbar-bg" style="background-color: #1a1c1d;">
+				<a class="sidebar-toggle d-flex">
+          			<i class="hamburger align-self-center"></i>
+        		</a>
+				<span><font size=3>Toggle Details</font></span>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<svg t="1608008181065" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1114" width="22" height="22"><path d="M1007.575017 641.991196c0-82.700286-54.014833-152.209672-183.213905-173.34234 0.52729-29.582278 0.544578-58.179129 0.544579-84.949914H16.427144c0 245.924705 0 640.301058 404.247917 640.301058 188.711554 0 289.296487-85.967756 342.941785-202.641524 173.34234-7.289139 243.958171-84.720845 243.958171-179.36728zM215.643443 869.173326c-76.202082-112.580786-105.079866-245.503305-104.798933-380.076847 0.123178-56.633996 87.953739-56.651284 87.83056 0-0.246357 120.291325 24.698361 235.121738 92.818208 335.739087 31.847033 47.060653-44.283735 90.940276-75.849835 44.33776z m576.71072-127.863558c17.126127-62.131645 25.242939-128.654494 29.072277-193.262674 67.540692 16.776041 82.963931 51.345966 82.155707 95.822033-0.911953 50.628506-19.619951 85.075253-111.227984 97.440641zM326.661807 298.768478c14.053149-40.506262 10.258388-79.819639-5.093537-119.308058-17.074263-43.862335-39.522996-73.338723-8.114651-116.12919 33.569371-45.742427-42.704025-89.481584-75.832547-44.337761-28.352655 38.628331-36.151796 80.452819-24.030604 126.703088 11.943988 45.567384 45.355604 80.802905 28.387232 129.706913-18.621557 53.666908 66.239754 76.519753 84.684107 23.365008zM484.755951 298.768478c14.053149-40.506262 10.258388-79.819639-5.093537-119.308058-17.074263-43.862335-39.522996-73.338723-8.114651-116.12919 33.569371-45.742427-42.704025-89.481584-75.832546-44.337761-28.352655 38.628331-36.151796 80.452819-24.030604 126.703088 11.943988 45.567384 45.355604 80.802905 28.387231 129.706913-18.621557 53.666908 66.239754 76.519753 84.684107 23.365008zM642.850096 298.768478c14.053149-40.506262 10.258388-79.819639-5.093538-119.308058-17.074263-43.862335-39.522996-73.338723-8.11465-116.12919 33.569371-45.742427-42.704025-89.481584-75.832547-44.337761-28.350494 38.628331-36.151796 80.452819-24.030604 126.703088 11.943988 45.567384 45.355604 80.802905 28.387231 129.706913-18.621557 53.666908 66.239754 76.519753 84.684108 23.365008z" p-id="1115" fill="#889099"></path></svg>
+							<font size=4 color='#889099'>&nbsp;茶饮产品市场分析</font>
+						</li>
+						<li>
+							<font size=4>&nbsp;|&nbsp;</font>
+						</li>
+						<li>
+							<font size=4>2022-08-03</font>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content" style="background-color: #1a1c1d;">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3" style="color:#889099">
+						原始数据统计信息
+						<div class="btn-group"  style="background-color: rgba(16, 69, 78, 0.5);">
+							<button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								查看数据采样
+							</button>
+							<div class="dropdown-menu" style="background-color: rgba(16, 69, 78, 0.5);">
+								<a class="dropdown-item" href="./tables-bootstrap.html" style="color:#eef0f1;">Sheet Ｉ -- Deals</a>
+								<a class="dropdown-item" href="./tables-bootstrap-tab2.html" style="color:#eef0f1;">Sheet Ⅱ -- Shops</a>
+							</div>
+						</div>
+					</h1>
+					<h5 style="color: #889099">
+						<strong>概要</strong>：原始数据采集自美团美食搜索结果，搜索关键词为 <code>奶茶</code>，搜索城市为全国范围内的直辖市、一线城市、省会城市，每个城市取搜索结果中前 <a href='#'>30</a> 页约 <a href='#'>1000</a> 条店铺信息。
+					</h5>
+
+					<div class="row">
+
+						<div class="col-12 col-lg-6">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+									<h4 align="center" style="color:#17A2B8; font-size: 14px;">Sheet Ｉ：各个店铺推荐的热销商品信息</h4>
+									<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 0), rgba(60, 112, 198, 0.75), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+								</div>
+								<div class="card-body">
+									
+									<div id="overview-content" class="row variable">
+										<div class="col-sm-6">
+											<p class="h4" style="color:#1a1c1d;background-image:linear-gradient(to right, rgba(60, 112, 198, 0.8),rgba(60, 112, 198, 0.5), rgba(60, 112, 198, 0));">
+												&nbsp;Dataset info</p>
+											<table class="table table-bordered mb-0" style="font-size: 1em;">
+												<tbody>
+													<tr><th>Number of variables</th><td>6 </td></tr>
+													<tr><th>Number of observations</th><td>105705</td></tr>
+													<tr><th>Missing cells</th><td>0 (0.0%)</td></tr>
+													<tr><th>Duplicate rows</th><td>4024 (3.8%)</td></tr>
+													<tr><th>Total size</th><td>4.8 MB </td></tr>
+													<tr><th>Average size</th><td>48.0 B</td></tr>
+												</tbody>
+											</table>
+											<br>
+										</div>
+										<div class="col-sm-6">
+											<p class="h4" style="color:#000;background-image:linear-gradient(to right, rgba(60, 112, 198, 0.8),rgba(60, 112, 198, 0.5), rgba(60, 112, 198, 0));">
+												&nbsp;Variables types</p>
+											<table class="table table-bordered mb-0" style="font-size: 1em;">
+												<tbody>
+													<tr><th>Numeric</th><td>3</td></tr>
+													<tr><th>Categorical</th><td>2</td></tr>
+													<tr><th>Boolean</th><td>0</td></tr>
+													<tr><th>Date</th><td>0</td></tr>
+													<tr><th>URL</th><td>0</td></tr>
+													<tr><th>Text (Unique)</th><td>0</td></tr>
+													<tr><th>Rejected</th><td>1</td></tr>
+												</tbody>
+											</table>
+											<br>
+										</div>
+										<div class="col-sm-12" style="padding-left: 1em;">
+											<p class="h4" style="color:#1a1c1d;background-image:linear-gradient(to right, rgba(60, 112, 198, 0.8),rgba(60, 112, 198, 0.5), rgba(60, 112, 198, 0));">
+												&nbsp;Variables Description</p>
+											<table class="table table-bordered mb-0" style="font-size: 1em;">
+												<thead>
+													<tr>
+														<th>Name</th><th>Description</th><th>Std</th><th>Mean</th><th>Median</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr><td><a href="#"><code>title</code></a></td><td><span">商品标题（字符）</span></td><td>——</td><td>——</td><td>——</td></tr>
+													<tr><td><a href="#"><code>price</code></a></td><td><span">标价（数值）</span></td><td>73.21</td><td>32.51</td><td>14.00</td></tr>
+													<tr><td><a href="#"><code>value</code></a></td><td><span>原价（数值）</span></td><td>107.44</td><td>46.05</td><td>18.00</td></tr>
+													<tr><td><a href="#"><code>sales</code></a></td><td><span>销量（数值）</span></td><td>3.16e+5</td><td>1.18e+5</td><td>5.40e+3</td></tr>
+													<tr><td><a href="#"><code>shop_id</code></a></td><td><span>与表二对应的商店ID（编号）</span></td><td>——</td><td>——</td><td>——</td></tr>
+													<tr><td><a href="#"><code>city</code></a></td><td><span>所属城市（字符）</span></td><td>——</td><td>——</td><td>——</td></tr>
+												</tbody>
+											</table>
+											<br>
+										</div>
+										<div class="col-sm-12" style="padding-left: 1em;">
+											<p class="h4" style="color:#1a1c1d;background-image:linear-gradient(to right, rgba(60, 112, 198, 0.8),rgba(60, 112, 198, 0.5), rgba(60, 112, 198, 0));">
+												&nbsp;Warnings</p>
+											<table class="table" style="font-size: 1em">
+												<tr><td>Dataset has 4024 (3.8%) duplicate rows</td><td><span>Warning</span></td><td></td></tr>
+												<tr><td><a href="#"><code>price</code></a> is highly skewed (γ1 = 34.17525054)</td><td><span">Skewed</span></td></tr>
+												<tr><td><a href="#"><code>sales</code></a> has 3092 (2.9%) zeros</td><td><span">Zeros</span></td></tr>
+												<tr><td><a href="#"><code>title</code></a> has a high cardinality: 20916 distinct values</td><td><span>Warning</span></td></tr>
+												<tr><td><a href="#"><code>value</code></a> is highly correlated with <a href="#"><code>price</code></a> (ρ = 0.9631010987)</td><td><span>Rejected</span></td></tr>
+											</table>
+										</div>
+									</div>
+									<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 0), rgba(60, 112, 198, 0.75), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-12 col-lg-6">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+									<h4 align="center" style="color:#17A2B8; font-size: 14px;">Sheet Ⅱ：各个城市的店铺信息</h4>
+									<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 0), rgba(60, 112, 198, 0.75), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+								</div>
+								<div class="card-body">
+									
+									<div id="overview-content" class="row variable">
+										<div class="col-sm-6">
+											<p class="h4" style="color:#1a1c1d;background-image:linear-gradient(to right, rgba(60, 112, 198, 0.8),rgba(60, 112, 198, 0.5), rgba(60, 112, 198, 0));">
+												&nbsp;Dataset info</p>
+											<table class="table table-bordered mb-0" style="font-size: 1em;">
+												<tbody>
+													<tr><th>Number of variables</th><td>14</td></tr>
+													<tr><th>Number of observations</th><td>30145</td></tr>
+													<tr><th>Missing cells</th><td>2039 (0.5%)</td></tr>
+													<tr><th>Duplicate rows</th><td>2218 (7.4%)</td></tr>
+													<tr><th>Total size</th><td>3.0 MB </td></tr>
+													<tr><th>Average size</th><td>105.0 B</td></tr>
+												</tbody>
+											</table>
+											<br>
+										</div>
+										<div class="col-sm-6">
+											<p class="h4" style="color:#1a1c1d;background-image:linear-gradient(to right, rgba(60, 112, 198, 0.8),rgba(60, 112, 198, 0.5), rgba(60, 112, 198, 0));">
+												&nbsp;Variables types</p>
+											<table class="table table-bordered mb-0" style="font-size: 1em;">
+												<tbody>
+													<tr><th>Numeric</th><td>6</td></tr>
+													<tr><th>Categorical</th><td>7</td></tr>
+													<tr><th>Boolean</th><td>1</td></tr>
+													<tr><th>Date</th><td>0</td></tr>
+													<tr><th>URL</th><td>0</td></tr>
+													<tr><th>Text (Unique)</th><td>0</td></tr>
+													<tr><th>Rejected</th><td>0</td></tr>
+												</tbody>
+											</table>
+											<br>
+										</div>
+										<div class="col-sm-12" style="padding-left: 1em;">
+											<p class="h4" style="color:#1a1c1d;background-image:linear-gradient(to right, rgba(60, 112, 198, 0.8),rgba(60, 112, 198, 0.5), rgba(60, 112, 198, 0));">
+												&nbsp;Variables Description</p>
+											<table class="table table-bordered mb-0" style="font-size: 1em;">
+												<thead>
+													<tr>
+														<th>Name</th><th>Description</th><th>Std</th><th>Mean</th><th>Median</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr><td><a href="#"><code>id</code></a></td><td><span>商店ID（编号）</span></td><td>——</td><td>——</td><td>——</td></tr>
+													<tr><td><a href="#"><code>title</code></a></td><td><span">商店名称（字符）</span></td><td>——</td><td>——</td><td>——</td></tr>
+													<tr><td><a href="#"><code>address</code></a></td><td><span">地址（字符）</span></td><td>——</td><td>——</td><td>——</td></tr>
+													<tr><td><a href="#"><code>avgprice</code></a></td><td><span">产品均价（数值）</span></td><td>47.19</td><td>18.35</td><td>14.00</td></tr>
+													<tr><td><a href="#"><code>latitude</code></a></td><td><span">纬度（数值）</span></td><td>6.80</td><td>33.05</td><td>31.95</td></tr>
+													<tr><td><a href="#"><code>longitude</code></a></td><td><span>经度（数值）</span></td><td>8.32</td><td>112.35</td><td>113.64</td></tr>
+													<tr><td><a href="#"><code>avgscore</code></a></td><td><span>评分均值（数值）</span></td><td>1.39</td><td>3.79</td><td>4.00</td></tr>
+													<tr><td><a href="#"><code>comments</code></a></td><td><span>评论数量（数值）</span></td><td>1675</td><td>358</td><td>22</td></tr>
+													<tr><td><a href="#"><code>backCateName</code></a></td><td><span>店铺分类（字符）</span></td><td>——</td><td>——</td><td>——</td></tr>
+													<tr><td><a href="#"><code>areaname</code></a></td><td><span>所在区域（字符）</span></td><td>——</td><td>——</td><td>——</td></tr>
+													<tr><td><a href="#"><code>phone</code></a></td><td><span>联系电话</span></td><td>——</td><td>——</td><td>——</td></tr>
+													<tr><td><a href="#"><code>region</code></a></td><td><span>行政区域（字符）</span></td><td>——</td><td>——</td><td>——</td></tr>
+													<tr><td><a href="#"><code>isMain</code></a></td><td><span>是否主营茶饮（逻辑）</span></td><td>——</td><td>69.2%</td><td>——</td></tr>
+													<tr><td><a href="#"><code>city</code></a></td><td><span>所在城市（字符）</span></td><td>——</td><td>——</td><td>——</td></tr>
+												</tbody>
+											</table>
+											<br>
+										</div>
+										<div class="col-sm-12" style="padding-left: 1em;">
+											<p class="h4" style="color:#1a1c1d;background-image:linear-gradient(to right, rgba(60, 112, 198, 0.8),rgba(60, 112, 198, 0.5), rgba(60, 112, 198, 0));">
+												&nbsp;Warnings</p>
+											<table class="table" style="font-size: 1em">
+												<tr><td>Dataset has 2218 (7.4%) duplicate rows</td><td><span>Warning</span></td></tr>
+												<tr><td><a href="#"><code>address</code></a> has a high cardinality: 27651 distinct values</td><td><span>Warning</span></td></tr>
+												<tr><td><a href="#"><code>areaname</code></a> has a high cardinality: 3280 distinct values</td><td><span>Warning</span></td></tr>
+												<tr><td><a href="#"><code>avgprice</code></a> is highly skewed (γ1 = 94.30320468)</td><td><span >Skewed</span></td></tr>
+												<tr><td><a href="#"><code>avgprice</code></a> has 5963 (19.8%) zeros</td><td><span >Zeros</span></td></tr>
+												<tr><td><a  href="#"><code>avgscore</code></a> has 3063 (10.2%) zeros</td><td><span >Zeros</span></td></tr>
+												<tr><td><a href="#"><code>backCateName</code></a> has a high cardinality: 220 distinct values</td><td><span>Warning</span></td></tr>
+												<tr><td><a href="#"><code>comments</code></a> has 9078 (30.1%) zeros</td><td><span >Zeros</span></td></tr>
+												<tr><td><a href="#"><code>phone</code></a> has a high cardinality: 25710 distinct values</td><td><span>Warning</span></td></tr>
+												<tr><td><a  href="#"><code>phone</code></a> has 2039 (6.8%) missing values</td><td><span >Missing</span></td></tr>
+												<tr><td><a href="#"><code>region</code></a> has a high cardinality: 2116 distinct values</td><td><span>Warning</span></td></tr>
+												<tr><td><a  href="#"><code>title</code></a> has a high cardinality: 9027 distinct values</td><td><span>Warning</span></td></tr>
+											</table>
+										</div>
+									</div>
+									<hr style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;color: rgb(53, 53, 53);height: 1px;border: none;text-align: center;background-image: linear-gradient(to right, rgba(60, 112, 198, 0), rgba(60, 112, 198, 0.75), rgba(60, 112, 198, 0));box-sizing: border-box !important;word-wrap: break-word !important;">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer" style="background-color: #1a1c1d;">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-left">
+							<p class="mb-0">
+								<a href="index.html" class="text-muted"><strong>Analytics Dashboard Original by Paradise</strong></a> &copy;
+							</p>
+						</div>
+						<div class="col-6 text-right">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://github.com/paradiseeee"><font color="#2DCBFF">About Me</font></a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://paradiseeee.github.io"><font color="#2DCBFF">My Blog</font></a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="mailto:paradise-yang@outlook.com?subject=From%20Paradise%27s%20Blog"><font color="#2DCBFF">Email Me</font></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+	</div>
+
+	<script src="./js/app.js"></script>		<!-- 相对路径 -->
+    <script>var host = window.location.host.split('.')[1];var home = document.getElementById('back');if (host == 'gitee'){home.getAttributeNode('href').value = 'https://paradiseeee.gitee.io/blog';}</script>
+</body>
+
+</html>
